@@ -1,0 +1,88 @@
+1. ahreji@ahreji-TM1701:~/Desktop/Kate$ mkdir test3
+
+2. ahreji@ahreji-TM1701:~/Desktop/Kate/test3$ touch file4.txt file5.txt file6.txt
+
+ahreji@ahreji-TM1701:~/Desktop/Kate/test3$ echo row1>>file4.txt
+ahreji@ahreji-TM1701:~/Desktop/Kate/test3$ echo row2>>file4.txt
+ahreji@ahreji-TM1701:~/Desktop/Kate/test3$ echo row3>>file4.txt
+ahreji@ahreji-TM1701:~/Desktop/Kate/test3$ echo row4>>file4.txt
+
+ahreji@ahreji-TM1701:~/Desktop/Kate/test3$ echo row1>>file5.txt
+ahreji@ahreji-TM1701:~/Desktop/Kate/test3$ echo row2>>file5.txt
+ahreji@ahreji-TM1701:~/Desktop/Kate/test3$ echo row3>>file5.txt
+ahreji@ahreji-TM1701:~/Desktop/Kate/test3$ echo row4>>file5.txt
+
+ahreji@ahreji-TM1701:~/Desktop/Kate/test3$ echo row1>>file6.txt
+ahreji@ahreji-TM1701:~/Desktop/Kate/test3$ echo row2>>file6.txt
+ahreji@ahreji-TM1701:~/Desktop/Kate/test3$ echo row3>>file6.txt
+ahreji@ahreji-TM1701:~/Desktop/Kate/test3$ echo row4>>file6.txt
+
+3.ahreji@ahreji-TM1701:~/Desktop/Kate/test3$ grep -i 'row2' file5.txt
+row2
+
+4.ahreji@ahreji-TM1701:~/Desktop/Kate/test3$ grep -R 'row'
+file4.txt:row1
+file4.txt:row2
+file4.txt:row3
+file4.txt:row4
+file6.txt:row1
+file6.txt:row2
+file6.txt:row3
+file6.txt:row4
+file5.txt:row1
+file5.txt:row2
+file5.txt:row3
+file5.txt:row4
+
+5.ahreji@ahreji-TM1701:~/Desktop/Kate/test3$ grep -c 'row' file6.txt
+4
+
+6.ahreji@ahreji-TM1701:~/Desktop/Kate/test3$ find . -name 'file5.txt'
+./file5.txt
+
+7.ahreji@ahreji-TM1701:~/Desktop/Kate/test3$ find . -name 'file5.txt' -delete
+
+8.ahreji@ahreji-TM1701:~/Desktop/Kate/test3$ echo test>>file4.txt
+
+9.ahreji@ahreji-TM1701:~/Desktop/Kate/test3$ sed -i 's/test/fail/g' file4.txt
+
+10. ahreji@ahreji-TM1701:~/Desktop/Kate/test3$ echo test>>file4.txt
+
+11.ahreji@ahreji-TM1701:~/Desktop/Kate/test3$ ps aux
+
+12. ahreji@ahreji-TM1701:~/Desktop/Kate/test3$ kill 666
+
+13. ahreji@ahreji-TM1701:~$ ping artsiomrusau.com
+
+Pinging artsiomrusau.com [185.215.4.92] with 32 bytes of data:
+Request timed out.
+Request timed out.
+Request timed out.
+Request timed out.
+
+Ping statistics for 185.215.4.92:
+    Packets: Sent = 4, Received = 0, Lost = 4 (100% loss)
+
+
+14. ahreji@ahreji-TM1701:~$ ping -c 5 artsiomrusau.com
+PING artsiomrusau.com (185.215.4.92) 56(84) bytes of data.
+
+--- artsiomrusau.com ping statistics ---
+5 packets transmitted, 0 received, 100% packet loss, time 4102ms
+
+15. ahreji@ahreji-TM1701:~$ curl https://petstore.swagger.io/v2/pet/findByStatus?status=pending
+
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  1287    0  1287    0     0    248      0 --:--:--  0:00:05 --:--:--   367[{"id":9727313,"category":{"id":26989837,"name":"incididunt est non"},"name":"doggy","photoUrls":["dolor veniam","eiusmod dolore in aliqua"],"tags":[{"id":-90210856,"name":"sit sint"},{"id":-88981588,"name":"non velit anim sint"}],"status":"pending"},{"id":12345,"category":{"id":0,"name":"Tuto-Karate2"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"pending"},{"id":9223372036854600698,"name":"","photoUrls":[],"tags":[],"status":"pending"},{"id":9223372036854600752,"category":{"id":0},"name":"","photoUrls":[],"tags":[],"status":"pending"},{"id":9223372036854600757,"name":"","photoUrls":[],"tags":[],"status":"pending"},{"id":9223372036854600760,"name":"","photoUrls":[],"tags":[],"status":"pending"},{"id":9223372036854600777,"category":{"id":0},"name":"","photoUrls":[],"tags":[],"status":"pending"},{"id":9223372036854600778,"name":"","photoUrls":[],"tags":[],"status":"pending"},{"id":9223372036854600800,"category":{"id":0},"name":"","photoUrls":[],"tags":[],"status":"pending"},{"id":9223372036854600801,"category":{"id":0},"name":"","photoUrls":[],"tags":[],"status":"pending"},{"id":9223372036854601266,"category":{"id":0,"name":"string"},"name":"AnveshMonkey","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"pending"}]
+
+16. ahreji@ahreji-TM1701:~$ curl -d '{"id":34547, "username":"Test177"}' -H "Content-Type: application/json" -X POST https://petstore.swagger.io/v2/user
+
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100    81    0    47  100    34     53     38 --:--:-- --:--:-- --:--:--    91{"code":200,"type":"unknown","message":"34547"}
+
+
+
+
+

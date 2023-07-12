@@ -1,0 +1,96 @@
+1.Екатерина@DESKTOP-P97C4IJ MINGW64 ~/Documents/Homework
+$ pwd
+/c/Users/Екатерина/Documents/Homework
+
+2.Екатерина@DESKTOP-P97C4IJ MINGW64 ~/Documents/Homework
+$ mkdir test1
+
+3.Екатерина@DESKTOP-P97C4IJ MINGW64 ~/Documents/Homework
+$ cd test1
+
+4.Екатерина@DESKTOP-P97C4IJ MINGW64 ~/Documents/Homework/test1
+$ touch file1.txt file2.txt file3.txt
+
+5. Екатерина@DESKTOP-P97C4IJ MINGW64 ~/Documents/Homework/test1
+$ ls
+file1.txt  file2.txt  file3.txt
+
+6.Екатерина@DESKTOP-P97C4IJ MINGW64 ~/Documents/Homework
+$ mkdir test2
+
+7.Екатерина@DESKTOP-P97C4IJ MINGW64 ~/Documents/Homework
+$ rmdir test2
+
+8. Екатерина@DESKTOP-P97C4IJ MINGW64 ~/Documents/Homework/test1
+$ rm file2.txt
+
+9. Екатерина@DESKTOP-P97C4IJ MINGW64 ~/Documents/Homework
+$ mkdir test3
+
+Екатерина@DESKTOP-P97C4IJ MINGW64 ~/Documents/Homework
+$ cd test3
+
+Екатерина@DESKTOP-P97C4IJ MINGW64 ~/Documents/Homework/test3
+$ touch file_tst1.txt file_tst2.txt
+
+10. Екатерина@DESKTOP-P97C4IJ MINGW64 ~/Documents/Homework/test3
+$ rm -rf test3
+
+
+11.Екатерина@DESKTOP-P97C4IJ MINGW64 ~/Documents/Homework
+$ mkdir test4
+
+12.Екатерина@DESKTOP-P97C4IJ MINGW64 ~/Documents/Homework
+$ mv test1/file1.txt test4
+
+Екатерина@DESKTOP-P97C4IJ MINGW64 ~/Documents/Homework
+$ mv test1/file3.txt test4
+
+13. Екатерина@DESKTOP-P97C4IJ MINGW64 ~/Documents/Homework/test4
+$ echo line1>>file1.txt
+
+Екатерина@DESKTOP-P97C4IJ MINGW64 ~/Documents/Homework/test4
+$ echo line2>>file1.txt
+
+Екатерина@DESKTOP-P97C4IJ MINGW64 ~/Documents/Homework/test4
+$ echo line3>>file1.txt
+
+14.Екатерина@DESKTOP-P97C4IJ MINGW64 ~/Documents/Homework/test4
+$ cat file1.txt
+line1
+line2
+line3
+
+15.Екатерина@DESKTOP-P97C4IJ MINGW64 ~/Documents/Homework/test4
+$ echo line1>>file3.txt
+
+Екатерина@DESKTOP-P97C4IJ MINGW64 ~/Documents/Homework/test4
+$ echo line2>>file3.txt
+
+Екатерина@DESKTOP-P97C4IJ MINGW64 ~/Documents/Homework/test4
+$ echo line3>>file3.txt
+
+16.Екатерина@DESKTOP-P97C4IJ MINGW64 ~/Documents/Homework/test4
+$ cat file1.txt file3.txt
+line1
+line2
+line3
+line1
+line2
+line3
+
+17. Екатерина@DESKTOP-P97C4IJ MINGW64 ~/Documents/Homework/test4
+$ nano file3.txt
+
+^\ Replace
+Search (to replace): line1
+Replace with: row1
+Search (to replace) [line1]: line2
+Replace with: row2
+Search (to replace) [line3]: line3
+Replace with: row3
+
+
+
+
+
